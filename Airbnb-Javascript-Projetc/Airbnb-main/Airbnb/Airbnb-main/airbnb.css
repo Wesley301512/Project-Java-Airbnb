@@ -1,0 +1,591 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+
+.box-title h1 {
+    font-size: 1.6rem;
+}
+.box-title{
+    display: 	flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.box-title--btns{
+    display: flex;
+}
+
+.box-title--btn{
+    display: flex;
+    align-items: center; 
+    margin-left: 5px;
+}
+
+.box-title--btn1{
+    display: flex;
+    align-items: center;
+    left: 15%;
+    position: relative;
+}
+
+.box-title--btn1 a{
+    margin-left: 6px; 
+    font-size: 1rem;
+    color:#222;
+
+}
+
+.box-title--btn a{
+    margin-left: 6px; 
+    font-size: 1rem;
+    color:#222;
+}
+
+
+
+.gallery{
+    display: grid;
+    grid-template-rows: 180px 180px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 30px;
+    gap: 10px;
+}
+.gallery div{
+    width: 100%;
+    height: 100%;
+}
+.gallery img{
+    width: 100%;
+    height: 100%;
+}
+.gallery .img1{
+    grid-row: 1 / 3;
+    grid-column: 1/3;
+}
+.gallery .img1 img{
+    border-top-left-radius: 5px;
+}
+.description-casa{
+    display: flex;
+    margin-right: 10px;
+}
+.logo-container {
+    padding: 0;
+    margin: 0;
+    text-align: left; 
+    margin-bottom: 20px;
+}
+
+.logo {
+    padding: 10px;
+    margin: auto;
+    width: 150px; 
+    height: auto;
+}
+.block {
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 7px #aaa;
+    float: right; 
+}
+
+.group-blocks {
+    width: 100%;
+    min-width: 250px;
+}
+
+.block-a {
+    height: 500px;
+    margin-bottom: 10px;
+    background: transparent;
+    width: 350px;
+}
+.block-a li{
+    list-style: none;
+    justify-content: center;
+}
+.block-a li a{
+    color: white;
+    background-color: darkred;
+    text-decoration: none;
+    
+}
+.block-b{
+    height: 60px;
+    margin-top: 25px;
+    width: 100%;
+    left: 29px;
+    position: relative;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2,50px);
+    align-content: center;
+    font-size: 14px;
+}
+
+.block-b div.hospedes{
+    display: grid;
+    width: 100%;
+    border: 1px solid #b9b9b9;
+    width: auto;
+    /*align-self: center;*/
+    grid-column: 1/3;
+    grid-row: 2;
+    border-radius: 0px 0px 10px 10px;
+    align-items: center;
+    
+}
+
+.block-b div p{
+    margin-left: 10px;
+}
+
+.block-b div.check-in{
+    border: 1px solid #b9b9b9;
+    border-radius: 10px 0px 0px 0px;
+    align-items: center;
+    
+}
+
+.block-b div.check-in p{
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.block-b div.checkout p{
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.block-b div.hospedes p{
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+.block-b div.grid-precos{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 39% 39% 39% 10% 39%;
+    top: 110px;
+    color: #646464;
+}
+
+.block-b div.grid-precos .item-1 {
+    align-self: center;
+}
+
+.block-b div.grid-precos .item-2 {
+    align-self: center;
+    grid-row: 3;
+}
+
+.block-b div.grid-precos .item-3 {
+    align-self: center;
+    grid-row: 2;
+}
+
+.block-b div.grid-precos .item-3 {
+    align-self: center;
+    grid-row: 2;
+}
+
+.block-b div.grid-precos a{
+    color: #646464;
+}
+
+.block-b div.grid-precos .item-4 {
+    align-self: center;
+    grid-column: 1/3;
+    grid-row: 4;
+    height: 2px;
+    color: #f1f1f1;
+}
+
+.block-b div.grid-precos .item-5 {
+    align-self: center;
+    grid-row: 5;
+    font-weight: bold;
+}
+
+.block-b div.grid-precos .item-6 {
+    align-self: center;
+    grid-row: 1;
+    grid-column: 2;
+    align-self: right;
+    justify-self: right;
+}
+
+.block-b div.grid-precos .item-7 {
+    align-self: center;
+    grid-column: 2;
+    grid-row: 2;
+    justify-self: right;
+}
+
+.block-b div.grid-precos .item-8 {
+    align-self: center;
+    grid-column: 2;
+    justify-self: right;
+}
+
+.block-b div.grid-precos .item-9 {
+    align-self: center;
+    grid-column: 2;
+    grid-row: 5;
+    justify-self: right;
+    font-weight: bold;
+}
+
+
+
+.block-b div.grid-precos .item-5 hr{
+    opacity: 30%;
+}
+
+
+
+.block-b div.hospedes p.nao-sera-cobrado{
+    display: flex;
+    justify-content: center;
+    top: 96px;
+    position: relative;
+    color: #ababab;
+    font-weight: 400;
+
+}
+
+
+
+
+.block-b div.checkout{
+    border: 1px solid #b9b9b9;
+    border-radius: 0px 10px 0px 0px;
+    align-items: center;
+}
+
+.block .span-hospedes{
+    margin-top:0;
+    display: grid;
+    color: rgb(95, 95, 95);
+    border: thin;
+}
+
+.block .span-hospedes{
+    color: rgb(95, 95, 95);
+}
+
+
+
+.description{
+    margin-top: 13px;
+
+}
+.description-casa { 
+    width: 26%;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+}
+.grid-container{
+    width: 60%;
+    height: 60px;
+    padding: 10px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 10px 1fr 10px  1fr 1fr;
+    grid-template-rows: 70px;
+    background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    justify-content: center;
+    bottom: 10px;
+    position: relative;
+}
+
+.grid-container .svg-grecia-esquerdo{
+    grid-row: 1/2;
+}
+
+.grid-container .svg-grecia-direito{
+    grid-row: 2/3;
+}
+
+
+
+.grid-item{
+    text-align: center;
+    font-size: 19px;
+    justify-self: center;
+    
+}
+
+
+.grid-item a {
+    list-style: none;
+    color: black;
+}
+.self{
+    margin-top: 40px;
+    display: flex;
+}
+.self a{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.patas{
+    margin-top: 40px;
+    display: flex;
+}
+.patas a{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.espaco{
+    margin-top: 40px;
+    display: flex;
+}
+.espaco a{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+.descricao{
+    width: 55%;
+    margin-top: 40px; 
+}
+.descricao a{
+    display: flex;
+    margin-top: 20px;
+    color: black;
+}
+.ofer{
+    margin-top: 40px;
+}
+
+.grid-baixo{
+    width: 60%;
+    height: 60px;
+    padding: 10px;
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.grid-itens{
+    display: flex;
+    margin-top: 15px;
+}
+.grid-itens p{
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+
+}
+div.btn button.reserva{
+    float: right;
+    position: relative;
+    right: -372px;
+    bottom: -224px;
+    width: 352px;
+    height: 46px;
+    border-radius: 8px;
+    background-color: #E31C5F;
+    font-size: 18px;
+    color: white;
+    border: thin;
+}
+
+.grid-central{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 1px 20px 200px;
+    margin-top: 18%;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+
+
+.grid-central .div-quarto-1{
+    grid-column: 1;
+    grid-row: 3;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+    bottom: 20px;
+}
+
+.grid-central .hr-quartos{
+    grid-row: 1;
+    grid-column: 1/4;
+    opacity: 40%;
+    gap: 10px
+}
+
+.grid-central .div-quarto-2{
+    grid-column: 2;
+    grid-row: 3;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+}
+
+.grid-central .div-quarto-3{
+    grid-column: 3;
+    grid-row: 3;
+    border: 1px solid #d3d3d3;
+    border-radius: 20px;
+}
+
+.grid-central .div-quarto-1 .quarto-1{
+    display: flex;
+    gap:8px;
+    margin-bottom: 18px;
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+}
+
+.grid-central .div-quarto-2 .quarto-2{
+    display: flex;
+    gap:8px;
+    margin-bottom: 18px;
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+}
+
+.grid-central .div-quarto-3 .quarto-3{
+    margin-bottom: 18px;
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+}
+
+.grid-central .div-quarto-1 .title-quarto-1{
+    font-weight: 600;
+    margin-bottom: 9px;
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+}
+
+.grid-central .div-quarto-2 .title-quarto-2{
+    font-weight: 600;
+    margin-bottom: 9px;
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+}
+
+.grid-central .div-quarto-3 .title-quarto-3{
+    font-weight: 600;
+    margin-bottom: 9px;
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+}
+
+.grid-central .div-quarto-1 .desc-1{
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+    color: #707070;
+}
+
+.grid-central .div-quarto-2 .desc-2{
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+    color: #707070;
+}
+
+.grid-central .div-quarto-3 .desc-3{
+    top: 19px;
+    position: relative;
+    margin-left: 18px;
+    color: #707070;
+}
+/* Estilos para os detalhes do imóvel */
+.details {
+    margin-top: 30px;
+}
+
+.details h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.details ul {
+    list-style-type: none;
+}
+
+.details li {
+    margin-bottom: 5px;
+}
+
+.details li strong {
+    font-weight: bold;
+}
+
+/* Estilos para as avaliações */
+.reviews {
+    margin-top: 30px;
+}
+
+.reviews h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.review {
+    margin-bottom: 15px;
+}
+
+.review p {
+    font-style: italic;
+    color: #555;
+}
+/* CSS para animação dos detalhes do imóvel */
+.details:hover {
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease;
+}
+
+/* CSS para animação das avaliações */
+.reviews:hover {
+    background-color: #f7f7f7;
+    transition: background-color 0.3s ease;
+}
+.details,
+.reviews {
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.details:hover,
+.reviews:hover {
+    background-color: #f7f7f7;
+    transform: scale(1.05);
+}
